@@ -50,6 +50,14 @@
 ;; nXhtml
 (load "~/.emacs.d/nxhtml/autostart.el")
 
+;; --- Key customization --
+
+(global-set-key "\C-x\C-m" 'execute-extended-command)
+(global-set-key "\C-c\C-m" 'execute-extended-command)
+
+(global-set-key [f5] 'call-last-kbd-macro)
+(global-set-key [f6] 'repeat)
+
 ;; Disable cursor keys
 (global-unset-key (kbd "<left>"))
 (global-unset-key (kbd "<right>"))
