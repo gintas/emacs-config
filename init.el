@@ -37,8 +37,8 @@
 (show-paren-mode 1)
 
 ;; Enable autocompletion.
-;;(require 'auto-complete-config)
-;;(ac-config-default)
+(require 'auto-complete-config)
+(ac-config-default)
 
 ;; Enable autocompletion (predictive-mode)
 ;;(add-to-list 'load-path "/home/gintas/.emacs.d/predictive")
