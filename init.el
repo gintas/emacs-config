@@ -13,6 +13,12 @@
 ;; Avoid using tabs for indentation.
 (setq-default indent-tabs-mode nil)
 
+;; Avoid littering the filesystem with autosave files.
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
 ;; Scrollbar on the right
 (set-scroll-bar-mode 'right)
 
