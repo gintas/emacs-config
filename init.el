@@ -16,6 +16,9 @@
 ;; Scrollbar on the right
 (set-scroll-bar-mode 'right)
 
+;; Show column number in mode line
+(setq column-number-mode t)
+
 ;; Disable the toolbar
 (tool-bar-mode -1)
 
