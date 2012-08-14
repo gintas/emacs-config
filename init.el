@@ -56,6 +56,12 @@
 ;; nXhtml
 (load "~/.emacs.d/nxhtml/autostart.el")
 
+;; Set default indentation to 2 spaces.
+(setq standard-indent 2)
+(setq sh-basic-offset 2)
+(setq sh-indentation 2)
+(setq js-indent-level 2)
+
 ;; --- Key customization --
 
 (global-set-key "\C-x\C-m" 'execute-extended-command)
