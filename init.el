@@ -1,6 +1,11 @@
 ;; Directory for plugins.
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
+;; Additional ELPA repositories.
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			 ("marmalade" . "http://marmalade-repo.org/packages")
+			 ("melpa" . "http://melpa.milkbox.net/packages/")))
+
 ;; Inhibit startup message.
 (setq inhibit-startup-message t)
 
