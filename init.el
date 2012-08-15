@@ -20,7 +20,7 @@
       `((".*" ,temporary-file-directory t)))
 
 ;; Scrollbar on the right
-(set-scroll-bar-mode 'right)
+(set-scroll-bar-mode 'right)  ;; default on emacs 24?
 
 ;; Show column number in mode line
 (setq column-number-mode t)
