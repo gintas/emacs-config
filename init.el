@@ -42,6 +42,9 @@
 ;; Highlight matching parentheses.
 (show-paren-mode 1)
 
+;; Match parentheses when typing.
+(electric-pair-mode 1)
+
 ;; Enable autocompletion.
 (require 'auto-complete-config)
 (ac-config-default)
