@@ -1,15 +1,13 @@
 ;; Directory for plugins.
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
-;; Directory for themes.
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-
 ;; Additional ELPA repositories.
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
 			 ("marmalade" . "http://marmalade-repo.org/packages")
 			 ("melpa" . "http://melpa.milkbox.net/packages/")))
 
 ;; Color theme.
+(setq custom-theme-directory "~/.emacs.d/themes/")
 (load-theme 'zenburn t)
 
 ;; Inhibit startup message.
