@@ -19,6 +19,14 @@
 ;; Accept y/n instead of yes/no for interactive questions.
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; MacOSX-specific configuration
+(if (string-equal system-type "darwin")
+    (progn
+      (setq mac-option-key-is-meta nil
+            mac-command-key-is-meta t
+            mac-command-modifier 'meta
+            mac-option-modifier 'none)))
+
 ;; Avoid using tabs for indentation.
 (setq-default indent-tabs-mode nil)
 
