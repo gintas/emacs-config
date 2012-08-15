@@ -1,10 +1,16 @@
 ;; Directory for plugins.
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
+;; Directory for themes.
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+
 ;; Additional ELPA repositories.
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
 			 ("marmalade" . "http://marmalade-repo.org/packages")
 			 ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+;; Color theme.
+(load-theme 'zenburn t)
 
 ;; Inhibit startup message.
 (setq inhibit-startup-message t)
@@ -42,7 +48,7 @@
 
 ;; Highlight the line under the cursor
 (global-hl-line-mode 1)
-(set-face-background 'hl-line "#fef8d0")
+;;(set-face-background 'hl-line "#fef8d0")  ;; use for light background
 
 ;; Highlight matching parentheses.
 (show-paren-mode 1)
@@ -97,19 +103,3 @@
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 (global-set-key (kbd "C-c c") 'open-emacs-config)
-
-;; In-process customizations.
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (tango)))
- '(custom-safe-themes (quote ("3580fb8e37ee9e0bcb60762b81260290329a97f3ca19249569d404fce422342f" default)))
- '(fci-rule-color "#383838"))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
