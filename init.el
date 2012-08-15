@@ -74,7 +74,8 @@
 ;;(require 'predictive)
 
 ;; nXhtml
-(load "~/.emacs.d/nxhtml/autostart.el")
+;; -- a bit slow to load, hence disabled by default
+;;(load "~/.emacs.d/nxhtml/autostart.el")
 
 ;; Set default indentation to 2 spaces.
 (setq standard-indent 2)
