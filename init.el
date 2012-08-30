@@ -89,6 +89,9 @@
 (setq sh-basic-offset 2)
 (setq sh-indentation 2)
 (setq js-indent-level 2)
+(setq js2-basic-offset 2)
+
+(setq-default fill-column 100)
 
 ;; --- Key customization --
 
