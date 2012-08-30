@@ -81,6 +81,9 @@
 ;; -- a bit slow to load, hence disabled by default
 ;;(load "~/.emacs.d/nxhtml/autostart.el")
 
+;; expand-region
+(global-set-key (kbd "C-=") 'er/expand-region)
+
 ;; Set default indentation to 2 spaces.
 (setq standard-indent 2)
 (setq sh-basic-offset 2)
