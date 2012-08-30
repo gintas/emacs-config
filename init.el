@@ -52,6 +52,10 @@
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
+;; js2-refactor
+(autoload 'js2-refactor "js2-refactor" nil t)
+;;(add-to-list 'auto-mode-alist '("\\.js$" . js2-refactor))
+
 ;; Highlight the line under the cursor
 (global-hl-line-mode 1)
 ;;(set-face-background 'hl-line "#fef8d0")  ;; use for light background
