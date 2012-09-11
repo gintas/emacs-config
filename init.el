@@ -101,6 +101,8 @@
 (global-set-key [f5] 'call-last-kbd-macro)
 (global-set-key [f6] 'repeat)
 
+(global-set-key (kbd "C-c g") 'magit-status)
+
 ;; Disable cursor keys
 (global-unset-key (kbd "<left>"))
 (global-unset-key (kbd "<right>"))
