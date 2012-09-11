@@ -119,4 +119,4 @@
 (defun open-emacs-config ()
   (interactive)
   (find-file "~/.emacs.d/init.el"))
-(global-set-key (kbd "C-c c") 'open-emacs-config)
+(global-set-key [f9] 'open-emacs-config)
