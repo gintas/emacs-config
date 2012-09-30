@@ -30,6 +30,9 @@
 ;; Avoid using tabs for indentation.
 (setq-default indent-tabs-mode nil)
 
+;; Highlight trailing whitespace.
+(setq-default show-trailing-whitespace t)
+
 ;; Avoid littering the filesystem with autosave files.
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
@@ -68,6 +71,7 @@
 
 ;; Enable autocompletion.
 (require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "/home/gintas/.emacs.d/lisp/ac-dict")
 (ac-config-default)
 
 ;; Enable autocompletion (predictive-mode)
