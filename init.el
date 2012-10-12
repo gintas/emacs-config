@@ -71,9 +71,6 @@
 ;; Highlight matching parentheses.
 (show-paren-mode 1)
 
-;; Match parentheses when typing.
-(electric-pair-mode 1)
-
 ;; Enable autocompletion.
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "/home/gintas/.emacs.d/lisp/ac-dict")
