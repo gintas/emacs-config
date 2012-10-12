@@ -31,6 +31,7 @@
 (setq-default indent-tabs-mode nil)
 
 ;; Highlight trailing whitespace.
+;; TODO: disable for shell buffers
 (setq-default show-trailing-whitespace t)
 
 ;; Avoid littering the filesystem with autosave files.
@@ -59,6 +60,10 @@
 (autoload 'js2-refactor "js2-refactor" nil t)
 ;;(add-to-list 'auto-mode-alist '("\\.js$" . js2-refactor))
 
+;; speedbar for Haskell
+(require 'speedbar)
+(speedbar-add-supported-extension ".hs")
+
 ;; Highlight the line under the cursor
 (global-hl-line-mode 1)
 ;;(set-face-background 'hl-line "#fef8d0")  ;; use for light background
@@ -73,6 +78,9 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "/home/gintas/.emacs.d/lisp/ac-dict")
 (ac-config-default)
+
+;; Easy consecutive mark pop using C-<SPC> after C-u.
+(setq-default set-mark-command-repeat-pop 1)
 
 ;; Enable autocompletion (predictive-mode)
 ;;(add-to-list 'load-path "/home/gintas/.emacs.d/predictive")
@@ -96,6 +104,7 @@
 (setq js2-basic-offset 2)
 (setq css-indent-offset 2)
 
+;; Set default text width to 100.
 (setq-default fill-column 100)
 
 ;; --- Key customization --
