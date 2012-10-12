@@ -52,6 +52,11 @@
 ;; iswitchb-mode
 (iswitchb-mode 1)
 
+;; Omit uninteresting files from dired
+(require 'dired-x)
+(add-to-list 'dired-omit-extensions ".hi")
+(add-hook 'dired-mode-hook (lambda () (dired-omit-mode)))
+
 ;; js2-mode
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
