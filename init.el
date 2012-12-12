@@ -119,6 +119,13 @@
 
 (global-set-key (kbd "C-c g") 'magit-status)
 
+(global-set-key (kbd "C-c C-q") 'save-and-server-edit)
+
+(defun save-and-server-edit ()
+  (interactive)
+  (save-buffer)
+  (server-edit))
+
 ;; Disable cursor keys
 (global-unset-key (kbd "<left>"))
 (global-unset-key (kbd "<right>"))
@@ -138,3 +145,6 @@
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 (global-set-key [f9] 'open-emacs-config)
+
+;; Google emacs
+(require 'google)
